@@ -14,9 +14,9 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  Deploy:
+  deploy:
     environment:
-      name: GitHub-pages
+      name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
@@ -28,6 +28,7 @@ jobs:
         with:
           node-version: 18
           cache: npm
+
       - name: Install dependencies
         run: npm ci
 
@@ -42,6 +43,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        
-
 
