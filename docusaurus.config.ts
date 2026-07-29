@@ -92,6 +92,11 @@ const config: Config = {
         },
         {to: '/blog', label: 'Updates & Articles', position: 'left'},
         {
+          href: 'https://www.facebook.com/profile.php?id=61592275604349',
+          label: 'Facebook',
+          position: 'right',
+        },
+        {
           href: 'https://github.com/Mohammed-Jemal/ethio-ai-academy',
           label: 'GitHub',
           position: 'right',
@@ -114,17 +119,14 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Facebook',
+              href: 'https://www.facebook.com/profile.php?id=61592275604349',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'YouTube',
+              href: 'https://www.youtube.com/channel/UCMKS5lAKHe0N1uhO75TliXQ',
             },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
+            
           ],
         },
         {
@@ -136,12 +138,12 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/Mohammed-Jemal/ethio-ai-academy',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Ethio-AI Academy. Built with Docusaurus`,
     },
     prism: {
       theme: prismThemes.github,
