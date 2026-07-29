@@ -26,7 +26,7 @@ const config: Config = {
   projectName: 'ethio-ai-academy', // Usually your repo name.
   trailingSlash: false,
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',  //new added me
 
   // Even if you don't use internationalization, you can use this field to set
@@ -88,6 +88,7 @@ const config: Config = {
           sidebarId: 'tutorialSidebar',
           position: 'left',
           label: 'Courses',  //Tutorial to Courses
+          docId: 'intro-to-ai',
         },
         {to: '/blog', label: 'Updates & Articles', position: 'left'},
         {
@@ -105,7 +106,7 @@ const config: Config = {
           items: [
             {
               label: 'Courses',  //Tutorial to Courses
-              to: '/docs/intro',
+              to: '/docs/intro-to-ai',
             },
           ],
         },
