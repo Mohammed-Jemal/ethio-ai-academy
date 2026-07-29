@@ -80,7 +80,7 @@ const config: Config = {
       title: 'Ethio-AI Academy',
       logo: {
         alt: 'Ethio-AI Academy Logo',
-        src: 'img/logo.svg',
+        src: 'img/ethioAI_logo.png',
       },
       items: [
         {

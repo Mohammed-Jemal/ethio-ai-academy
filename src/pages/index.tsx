@@ -13,6 +13,11 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
+        <img 
+          src="img/ethioAI_logo.png" 
+          alt="Ethio-AI Academy Logo" 
+          style={{ width: '180px', height: 'auto', marginBottom: '1rem' }} 
+        />
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
         </Heading>
@@ -21,7 +26,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro-to-ai">
-            Docusaurus Tutorial - 5min ⏱️
+            Explore Courses 💻
           </Link>
         </div>
       </div>
