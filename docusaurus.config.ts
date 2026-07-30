@@ -32,9 +32,22 @@ const config: Config = {
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
+
+  
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'am'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+        direction: 'ltr',
+      },
+      am: {
+        label: 'አማርኛ (Amharic)',
+        direction: 'ltr'
+      },
+    
+    },
   },
 
   presets: [
@@ -72,7 +85,8 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    //image: 'img/docusaurus-social-card.jpg',
+    image: 'img/ethioAI_logo.png',
     colorMode: {
       respectPrefersColorScheme: true,
     },
@@ -91,6 +105,10 @@ const config: Config = {
           docId: 'intro-to-ai',
         },
         {to: '/blog', label: 'Updates & Articles', position: 'left'},
+        {
+          type: 'localeDropdown',
+          position: 'right',
+        },
         {
           href: 'https://www.facebook.com/profile.php?id=61592275604349',
           label: 'Facebook',

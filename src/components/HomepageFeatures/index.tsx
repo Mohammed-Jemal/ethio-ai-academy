@@ -5,48 +5,58 @@ import styles from './styles.module.css';
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  icon: string;
   description: ReactNode;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'AI for Ethiopia',
+    icon: '🌍',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Harnessing artificial intelligency to solve local challenges-from agriculture
+        to healthcare. We tailor cutting-edge AI education to Ethiopia's unique context.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Hands-on Learning',
+    icon: '💻',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+       Build real-world projects with mentorship from industry experts. Our labs
+       and hackathons turns theory into practical, deployable solutions.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Community-Driven',
+    icon: "🫱🏾‍🫲🏿",
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Join a vibrant network of AI enthusiasts, researchers, and entrepreneurs.
+        Collaborate, share knowledge, and grow together in Ethiopia's AI ecosystem.
       </>
     ),
   },
+  {
+    title: 'Ethiopian Language AI',
+    icon: '📚',
+    description: (
+      <>
+      Breaking language barriers-we develop NLP models for Amharic, Oromifa,
+       Somaligna, and more, making AI accessible to all Ethiopians.
+      </>
+    )
+  }
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({title, icon, description}: FeatureItem) {
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+    <div className={styles.featureCard}>
+      <div className={styles.featureIcon}>{icon}
+      
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
